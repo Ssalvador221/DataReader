@@ -1,0 +1,7 @@
+version: "1"
+packages:
+  - name: "store"
+    path: "internal/db/store"
+    queries: "internal/db/query.sql"
+    schema: "internal/db/migrations"
+    engine: "mysql"

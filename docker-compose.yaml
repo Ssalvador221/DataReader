@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    hostname: "db-csvreader"
+    container_name: db-csvreader
+    environment:
+      MYSQL_DATABASE: "csvreader"
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - "3306:3306"
